@@ -11,8 +11,8 @@ project(unified_memory LANGUAGES CXX VERSION 1.0)
 set(alpaka_DEP_CUDA ON)
 
 include(FetchContent)
-FetchContent_Declare(alpaka3 GIT_REPOSITORY https://github.com/alpaka-group/alpaka.git GIT_TAG 3.0.0)
-FetchContent_MakeAvailable(alpaka3)
+FetchContent_Declare(alpaka GIT_REPOSITORY https://github.com/alpaka-group/alpaka.git GIT_TAG 3.0.0)
+FetchContent_MakeAvailable(alpaka)
 
 # name of the executable
 set(_TARGET_NAME alpaka_task)
